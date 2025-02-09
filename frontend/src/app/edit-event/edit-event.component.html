@@ -1,0 +1,57 @@
+<form [formGroup]="editEventForm" (ngSubmit)="onSubmit()">
+  <label for="title">Title:</label>
+  <input id="title" formControlName="title" type="text" />
+  <div *ngIf="editEventForm.get('title')?.invalid && editEventForm.get('title')?.touched">
+    Title is required and must be less than 100 characters.
+  </div>
+
+  <label for="description">Description:</label>
+  <textarea id="description" formControlName="description"></textarea>
+  <div *ngIf="editEventForm.get('description')?.invalid && editEventForm.get('description')?.touched">
+    Description is required and must be less than 500 characters.
+  </div>
+
+  <label for="startLocation">Start Location:</label>
+  <input id="startLocation" formControlName="startLocation" type="text" />
+  <div *ngIf="editEventForm.get('startLocation')?.invalid && editEventForm.get('startLocation')?.touched">
+    Start Location is required.
+  </div>
+
+  <label for="distance">Distance:</label>
+  <input id="distance" formControlName="distance" type="number" />
+  <div *ngIf="editEventForm.get('distance')?.invalid && editEventForm.get('distance')?.touched">
+    Distance must be at least 1.
+  </div>
+
+  <label for="date">Date:</label>
+  <input id="date" formControlName="date" type="date" />
+  <div *ngIf="editEventForm.get('date')?.invalid && editEventForm.get('date')?.touched">
+    Date is required.
+  </div>
+
+  <label for="region">Region:</label>
+  <input id="region" formControlName="region" type="text" />
+  <div *ngIf="editEventForm.get('region')?.invalid && editEventForm.get('region')?.touched">
+    Region is required.
+  </div>
+
+  <label for="price">Price:</label>
+  <input id="price" formControlName="price" type="number" />
+  <div *ngIf="editEventForm.get('price')?.invalid && editEventForm.get('price')?.touched">
+    Price must be at least 0.
+  </div>
+
+  <label for="goodies">Goodies:</label>
+  <input id="goodies" formControlName="goodies" type="text" />
+  <div *ngIf="editEventForm.get('goodies')?.invalid && editEventForm.get('goodies')?.touched">
+    Goodies must be less than 255 characters.
+  </div>
+
+  <label for="image">Upload ImageModel:</label>
+  <input id="image" type="file" formControlName="image" />
+  <div *ngIf="editEventForm.get('image')?.invalid && editEventForm.get('image')?.touched">
+    An image file is required.
+  </div>
+
+  <button type="submit" [disabled]="editEventForm.invalid">Edit Event</button>
+</form>

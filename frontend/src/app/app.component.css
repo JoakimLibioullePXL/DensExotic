@@ -1,0 +1,151 @@
+/* Hero container */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 1 schermhoogte */
+  overflow: hidden;
+  margin: 0; /* Zorgt ervoor dat er geen witte kader ontstaat */
+  padding: 0;
+  box-sizing: border-box; /* Inclusief padding en borders in totale breedte/hoogte */
+}
+
+/* Achtergrond afbeelding */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../public/Headerimage.jpg'); /* Vervang met de URL van je afbeelding */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+/* Donkere gradient over de afbeelding */
+.background-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* Zorgt dat het de interactie met andere elementen niet hindert */
+}
+
+/* Logo container */
+.logo-container {
+  position: relative;
+  z-index: 3; /* Zorgt ervoor dat de tekst boven de achtergrond komt */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: white; /* Witte tekst */
+}
+
+.logo-container h1 {
+  font-size: 6rem; /* Maak de tekst groot */
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo-container h2 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+/* Responsiviteit voor kleinere schermen */
+@media (max-width: 768px) {
+  .logo-container h1,
+  .logo-container h2 {
+    font-size: 4rem; /* Schaal de tekst op kleinere schermen */
+  }
+}
+
+
+/* Algemene footer stijl */
+.footer-container {
+  background-color: #1C1C1C;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-content .logo {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.footer-content .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.footer-content .social-icons a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer-content .social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1 1 100%;
+  text-align: left;
+}
+
+.footer-links div {
+  flex: 1;
+}
+
+.footer-links h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsieve stijl */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-links div {
+    flex: none;
+  }
+}

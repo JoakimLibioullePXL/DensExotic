@@ -1,0 +1,89 @@
+/* Algemene opmaak */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputvelden */
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Placeholder stijl */
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+}
+
+/* Error messages */
+form div.ng-invalid.ng-touched {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Textarea specifieke opmaak */
+form textarea {
+  resize: vertical; /* Alleen verticale aanpassing toestaan */
+  height: 100px;
+}
+
+/* File upload veld */
+form input[type="file"] {
+  padding: 5px; /* Kleiner padding voor bestand-uploads */
+}
+
+/* Knoppen */
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 13px;
+  }
+}
