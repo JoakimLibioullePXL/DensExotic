@@ -1,16 +1,17 @@
-<div class="event-cards-background">
-  <video height="1920" width="1080" autoplay loop class="background-video">
-    <source src="assets/BGEventPages.mp4" type="video/mp4" />
+<div class="video-background">
+  <video autoplay loop muted playsinline>
+    <source src="assets/BGEventPages.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <div class="event-cards-overlay">
-    <div class="event-cards-container">
-      <div *ngFor="let event of events" class="event-card">
-        <img [src]="event.image" alt="{{ event.title }}" class="event-image" />
-        <div class="event-details">
-          <p class="event-date">{{ event.date }}</p>
-          <h3 class="event-title">{{ event.title }}</h3>
-        </div>
+</div>
+
+<div class="events-wrapper">
+  <div class="events-container">
+    <div class="event-card" *ngFor="let event of events">
+      <img [src]="event.image" alt="{{ event.title }}" class="event-image">
+      <div class="event-info">
+        <span class="event-date">{{ event.date }}</span>
+        <span class="event-title">{{ event.title }}</span>
       </div>
     </div>
   </div>

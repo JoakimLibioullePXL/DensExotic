@@ -10,25 +10,13 @@ import {NgForOf} from '@angular/common';
   templateUrl: './events-list.component.html',
   styleUrl: './events-list.component.css'
 })
-export class EventsListComponent implements OnInit {
-  events: any[] = [];
+export class EventsListComponent{
 
-  constructor(private eventService: EventService) {}
-
-  ngOnInit(): void {
-    this.loadEvents();
-
-  }
-
-
-  private loadEvents(): void {
-    this.eventService.getAllEvents().subscribe(
-      (data) => {
-        this.events = data;
-      },
-      (error) => {
-        console.error('Error loading events', error);
-      }
-    );
-  }
+  events = [
+    { title: 'JOYRID', date: '07/08 2025', image: 'assets/joyride.jpeg' },
+    { title: 'CARS AND COFFEE', date: '07/08 2025', image: 'assets/cars-coffee.jpeg' },
+    { title: 'FULL DAY DRIVE', date: '07/08 2025', image: 'assets/full-day-drive.jpeg' },
+    { title: 'CHARITY DRIVE', date: '07/08 2025', image: 'assets/charity-drive.jpeg' },
+    { title: 'TOUR DES ARDENNES', date: '07/08 2025', image: 'assets/tour-ardennes.jpeg' }
+  ];
 }
