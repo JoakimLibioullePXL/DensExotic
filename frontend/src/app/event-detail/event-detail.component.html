@@ -1,0 +1,24 @@
+<!-- event-detail.component.html -->
+<div class="event-detail-container">
+  <!-- Event Afbeelding -->
+  <div class="event-image-container">
+    <img [src]="event.image" alt="{{ event.title }}" class="event-image" />
+  </div>
+
+  <!-- Event Informatie -->
+  <div class="event-content">
+    <h1 class="event-title">{{ event.title }}</h1>
+
+    <div class="event-description">
+      <div *ngFor="let section of event.sections" class="event-section">
+        <h3 class="section-title">{{ section.title }}</h3>
+        <p class="section-text">{{ section.text }}</p>
+      </div>
+    </div>
+
+    <!-- Ticket Knop -->
+    <div class="event-button-container">
+      <button class="event-button">KOOP EEN TICKET</button>
+    </div>
+  </div>
+</div>

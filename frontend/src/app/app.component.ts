@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {AdminDashboardComponent} from './admin-dashboard/admin-dashboard.component';
 import {NgOptimizedImage} from '@angular/common';
 import {EventsListComponent} from './events-list/events-list.component';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',

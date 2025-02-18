@@ -8,7 +8,9 @@
 <div class="events-wrapper">
   <div class="events-container">
     <div class="event-card" *ngFor="let event of events">
-      <img [src]="event.image" alt="{{ event.title }}" class="event-image">
+      <a [routerLink]="['/event', event.id]">
+        <img [src]="event.image" alt="{{ event.title }}" class="event-image">
+      </a>
       <div class="event-info">
         <span class="event-date">{{ event.date }}</span>
         <span class="event-title">{{ event.title }}</span>

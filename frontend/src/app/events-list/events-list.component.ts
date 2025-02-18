@@ -1,22 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import {EventService} from '../shared/services/event.service';
 import {NgForOf} from '@angular/common';
+import {Router, RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-events-list',
   imports: [
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './events-list.component.html',
   styleUrl: './events-list.component.css'
 })
-export class EventsListComponent{
+export class EventsListComponent implements OnInit {
+  events: any[] = [];
 
-  events = [
-    { title: 'JOYRID', date: '07/08 2025', image: 'assets/joyride.jpeg' },
-    { title: 'CARS AND COFFEE', date: '07/08 2025', image: 'assets/cars-coffee.jpeg' },
-    { title: 'FULL DAY DRIVE', date: '07/08 2025', image: 'assets/full-day-drive.jpeg' },
-    { title: 'CHARITY DRIVE', date: '07/08 2025', image: 'assets/charity-drive.jpeg' },
-    { title: 'TOUR DES ARDENNES', date: '07/08 2025', image: 'assets/tour-ardennes.jpeg' }
-  ];
+  constructor(private eventService: EventService, private router: Router) {}
+
+  ngOnInit() {
+    this.events = this.eventService.getEvents();
+  }
+
+  goToEventDetail(event: any) {
+    this.router.navigate(['/event', event.id]);
+  }
 }
