@@ -38,7 +38,28 @@
   height: auto;
   text-align: center;
 }
+/* Neon animatie */
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffffff;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff;
+  }
+}
 
+/* Neon effect rond afbeeldingen */
+.column img {
+  max-width: 60%;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #fff; /* Witte neon rand */
+  animation: neon-glow 1.5s infinite alternate;
+}
 .column button{
   color: white;
   background-color: black;
@@ -65,7 +86,20 @@
 }
 
 .button-column h1{
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+.info-row{
+  display: flex;
+  text-align: center;
+  color: white;
+
+}
+.info-column{
+  flex: 33.33%;
+}
+.info-column h2{
+  font-size: 2rem;
 }
 
 .frame {
