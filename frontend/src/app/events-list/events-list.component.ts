@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {EventService} from '../shared/services/event.service';
-import {NgForOf} from '@angular/common';
+import { CommonModule, NgForOf } from '@angular/common';
 import {Router, RouterLink, RouterOutlet} from '@angular/router';
+import { EventService } from '../shared/services/event.service';
 
 @Component({
   selector: 'app-events-list',
-  imports: [
-    NgForOf,
-    RouterLink
-  ],
+  standalone: true,
+  imports: [CommonModule, NgForOf, RouterLink],
   templateUrl: './events-list.component.html',
-  styleUrl: './events-list.component.css'
+  styleUrls: ['./events-list.component.css']
 })
 export class EventsListComponent implements OnInit {
   events: any[] = [];
@@ -22,6 +20,8 @@ export class EventsListComponent implements OnInit {
   }
 
   goToEventDetail(event: any) {
-    this.router.navigate(['/event', event.id]);
+    if (event && event.id) {
+      this.router.navigate(['/event', event.id]);
+    }
   }
 }

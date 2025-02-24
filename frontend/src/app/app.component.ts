@@ -6,9 +6,8 @@ import {RouterOutlet} from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [
-    EventsListComponent,
     NgOptimizedImage,
-    EventsListComponent
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   standalone: true,

@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import {NgForOf} from '@angular/common';
-import {EventService} from '../shared/services/event.service';
+import {ActivatedRoute, RouterOutlet} from '@angular/router';
+import { CommonModule, NgForOf } from '@angular/common';
+import { EventService } from '../shared/services/event.service';
 
 @Component({
   selector: 'app-event-detail',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './event-detail.component.html',
-  imports: [
-    NgForOf
-  ],
   styleUrls: ['./event-detail.component.css']
 })
 export class EventDetailComponent implements OnInit {
@@ -17,7 +16,12 @@ export class EventDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private eventService: EventService) {}
 
   ngOnInit() {
-    const eventId = Number(this.route.snapshot.paramMap.get('id'));
-    this.event = this.eventService.getEventById(eventId);
+    this.route.paramMap.subscribe(params => {
+      const eventId = Number(params.get('id'));
+      if (eventId) {
+        this.event = this.eventService.getEventById(eventId);
+        console.log(this.event);
+      }
+    });
   }
 }

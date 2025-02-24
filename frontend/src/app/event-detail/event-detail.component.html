@@ -1,24 +1,42 @@
-<!-- event-detail.component.html -->
-<div class="event-detail-container">
-  <!-- Event Afbeelding -->
-  <div class="event-image-container">
-    <img [src]="event.image" alt="{{ event.title }}" class="event-image" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+
+<div class="video-background">
+  <video autoplay loop muted playsinline>
+    <source src="assets/BGEventPages.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<img src="assets/logo_white.png" class="dens-logo">
+
+<div class="event-container">
+  <div class="row">
+    <div class="column event-image">
+      <img [src]="event.activities[0].image" style="width:100%">
+    </div>
+    <div class="column">
+      <img [src]="event.activities[1].image" style="width:100%">
+    </div>
+    <div class="column">
+      <img [src]="event.activities[2].image" style="width:100%">
+    </div>
   </div>
 
-  <!-- Event Informatie -->
-  <div class="event-content">
-    <h1 class="event-title">{{ event.title }}</h1>
-
-    <div class="event-description">
-      <div *ngFor="let section of event.sections" class="event-section">
-        <h3 class="section-title">{{ section.title }}</h3>
-        <p class="section-text">{{ section.text }}</p>
+  <div class="button-row">
+    <div class="button-column">
+      <h1>{{event.title}}</h1>
+    </div>
+    <div class="button-column">
+      <div class="frame">
+        <button class="custom-btn btn-7"><span>KOOP EEN TICKET</span></button>
       </div>
     </div>
-
-    <!-- Ticket Knop -->
-    <div class="event-button-container">
-      <button class="event-button">KOOP EEN TICKET</button>
+    <div class="button-column">
+      <h1>{{event.title}}</h1>
     </div>
   </div>
+
+
 </div>
+
