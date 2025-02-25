@@ -4,9 +4,12 @@
   width: 100%;
   height: 100vh; /* 1 schermhoogte */
   overflow: hidden;
-  margin: 0; /* Zorgt ervoor dat er geen witte kader ontstaat */
+  margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Inclusief padding en borders in totale breedte/hoogte */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Achtergrond afbeelding */
@@ -16,56 +19,46 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../public/Headerimage.jpg'); /* Vervang met de URL van je afbeelding */
+  background-image: url('../../public/Headerimage.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;
 }
 
-/* Donkere gradient over de afbeelding */
-.background-image::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none; /* Zorgt dat het de interactie met andere elementen niet hindert */
-}
+
 
 /* Logo container */
 .logo-container {
   position: relative;
-  z-index: 3; /* Zorgt ervoor dat de tekst boven de achtergrond komt */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  z-index: 3;
   text-align: center;
-  color: white; /* Witte tekst */
+  color: white;
+  max-width: 90%;
 }
 
-.logo-container h1 {
-  font-size: 6rem; /* Maak de tekst groot */
-  font-weight: bold;
-  margin: 0;
-}
-
+.logo-container h1,
 .logo-container h2 {
   font-size: 6rem;
+  font-weight: bold;
   margin: 0;
+  line-height: 1.2;
 }
 
-/* Responsiviteit voor kleinere schermen */
-@media (max-width: 768px) {
+/* Responsiviteit voor tablets */
+@media (max-width: 1024px) {
   .logo-container h1,
   .logo-container h2 {
-    font-size: 4rem; /* Schaal de tekst op kleinere schermen */
+    font-size: 4rem;
   }
 }
 
+/* Responsiviteit voor mobiele schermen */
+@media (max-width: 768px) {
+  .logo-container h1,
+  .logo-container h2 {
+    font-size: 3rem;
+  }
+}
 
 /* Algemene footer stijl */
 .footer-container {
@@ -73,30 +66,30 @@
   color: #fff;
   padding: 2rem 1rem;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 
-.footer-content .logo {
-  flex: 1 1 100%;
-  text-align: center;
+.footer-content .logo img {
+  width: 150px;
+  height: auto;
 }
 
 .footer-content .social-icons {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 1rem 0;
 }
 
 .footer-content .social-icons a img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
@@ -106,14 +99,16 @@
 
 .footer-links {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  flex: 1 1 100%;
-  text-align: left;
+  max-width: 800px;
+  margin: auto;
 }
 
 .footer-links div {
-  flex: 1;
+  flex: 1 1 100%;
+  text-align: center;
 }
 
 .footer-links h4 {
@@ -127,12 +122,11 @@
 }
 
 .footer-bottom {
-  text-align: center;
   margin-top: 2rem;
   font-size: 0.9rem;
 }
 
-/* Responsieve stijl */
+/* Responsieve stijl voor mobiele apparaten */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -141,7 +135,6 @@
 
   .footer-links {
     flex-direction: column;
-    gap: 1.5rem;
     text-align: center;
   }
 

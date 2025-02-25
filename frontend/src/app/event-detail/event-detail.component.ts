@@ -20,7 +20,6 @@ export class EventDetailComponent implements OnInit {
       const eventId = Number(params.get('id'));
       if (eventId) {
         this.event = this.eventService.getEventById(eventId);
-        console.log(this.event);
       }
     });
   }
