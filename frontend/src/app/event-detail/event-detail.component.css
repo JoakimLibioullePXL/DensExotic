@@ -33,11 +33,13 @@
 .column {
   flex: 33.33%;
 }
+
 .column img{
   max-width: 60%;
   height: auto;
   text-align: center;
 }
+
 /* Neon animatie */
 @keyframes neon-glow {
   0% {
@@ -60,6 +62,7 @@
   border: 2px solid #fff; /* Witte neon rand */
   animation: neon-glow 1.5s infinite alternate;
 }
+
 .column button{
   color: white;
   background-color: black;
@@ -67,6 +70,7 @@
   font-weight: bold;
   font-size: 60px;
 }
+
 .column p{
   font-size: 100px;
   color: white;
@@ -81,6 +85,7 @@
   text-align: center;
   color: white;
 }
+
 .button-column{
   flex: 33.33%;
 }
@@ -93,11 +98,12 @@
   display: flex;
   text-align: center;
   color: white;
-
 }
+
 .info-column{
   flex: 33.33%;
 }
+
 .info-column h2{
   font-size: 2rem;
 }
@@ -107,9 +113,11 @@
   margin: 40px auto;
   text-align: center;
 }
+
 button {
   margin: 20px;
 }
+
 .custom-btn {
   color: #fff;
   width: 380px;
@@ -133,12 +141,14 @@ button {
   padding: 0;
   border: none;
 }
+
 .btn-7 span {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .btn-7:before,
 .btn-7:after {
   position: absolute;
@@ -149,20 +159,25 @@ button {
   box-shadow: 0 0 5px #fcfcfc;
   transition: all 0.3s ease;
 }
+
 .btn-7:before{
   height: 50%;
   width: 2px;
 }
+
 .btn-7:after {
   width: 20%;
   height: 2px;
 }
+
 .btn-7:hover:before {
   height: 100%;
 }
+
 .btn-7:hover:after {
   width: 100%;
 }
+
 .btn-7 span:before,
 .btn-7 span:after {
   position: absolute;
@@ -173,17 +188,94 @@ button {
   box-shadow: 0 0 5px #fcfcfc;
   transition: all 0.3s ease;
 }
+
 .btn-7 span:before {
   width: 2px;
   height: 50%;
 }
+
 .btn-7 span:after {
   height: 2px;
   width: 20%;
 }
+
 .btn-7 span:hover:before {
   height: 100%;
 }
+
 .btn-7 span:hover:after {
   width: 100%;
+}
+
+/* =================== 🔹 RESPONSIVE CSS 🔹 =================== */
+
+/* 📱 Mobiel (max 768px) */
+@media screen and (max-width: 768px) {
+  .dens-logo {
+    width: 40%;
+    max-width: 150px;
+  }
+
+  .row, .button-row, .info-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .column, .button-column, .info-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .column img {
+    max-width: 80%;
+
+  }
+
+  .custom-btn {
+    width: 200%;
+    font-size: 1.2rem;
+    position: relative;
+    left: -80px;
+  }
+
+  .button-row h1{
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .column p {
+    font-size: 2rem;
+  }
+
+  .back-button{
+    width: 35%;
+  }
+}
+
+/* 💻 Tablets (max 1024px) */
+@media screen and (max-width: 1024px) {
+  .column, .button-column, .info-column {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .custom-btn {
+    font-size: 1.3rem;
+  }
 }

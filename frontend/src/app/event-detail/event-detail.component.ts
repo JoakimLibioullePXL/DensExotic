@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, RouterOutlet} from '@angular/router';
+import {ActivatedRoute, RouterLink, RouterOutlet} from '@angular/router';
 import { CommonModule, NgForOf } from '@angular/common';
 import { EventService } from '../shared/services/event.service';
 
 @Component({
   selector: 'app-event-detail',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './event-detail.component.html',
   styleUrls: ['./event-detail.component.css']
 })
