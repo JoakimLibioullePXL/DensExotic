@@ -29,7 +29,7 @@
     </div>
     <div class="button-column">
       <div class="frame">
-        <button class="custom-btn btn-7"><span>KOOP EEN TICKET</span></button>
+        <a [href]="event.ticketLink"><button [routerLink]="event.ticketLink" class="custom-btn btn-7"><span>KOOP EEN TICKET</span></button></a>
       </div>
     </div>
     <div class="button-column">
@@ -41,23 +41,10 @@
     <div class="info-column">
       <h2>DE RIT</h2>
       <p>{{event.description}}</p>
-      <p>Start locatie: {{event.startLocation}}</p>
       <p>Afstand: {{event.distance}} Km</p>
       <p>Regio: {{event.region}}</p>
       <p>Datum: {{event.date}}</p>
       <p>Goodies: {{event.goodies}}</p>
-    </div>
-    <div class="info-column">
-      <h2>PRIJZEN</h2>
-      <p>Ticket per voetuig</p>
-      <p>1 Ticket = 1 voertuig (motor of auto)</p>
-      <h2>€{{event.price}}</h2>
-    </div>
-    <div class="info-column">
-      <h2>DE MENSEN</h2>
-      <p>Maak kennis met andere auto enthausiasten.</p>
-      <p>Deel je passie voor techniek en design van je wagen.</p>
-      <p>In het gezelschap en samenzijn van andere liefhebbers.</p>
     </div>
   </div>
 </div>
