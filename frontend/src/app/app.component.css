@@ -70,14 +70,14 @@
 }
 
 .footer-content {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
 
 .footer-content .logo img {
-  width: 150px;
+  width: 200px;
   height: auto;
 }
 
@@ -88,8 +88,8 @@
 }
 
 .footer-content .social-icons a img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s ease;
 }
 
@@ -128,6 +128,9 @@
 
 /* Responsieve stijl voor mobiele apparaten */
 @media (max-width: 768px) {
+  .background-image{
+    background-image: url('../../public/HeaderimageMobile.png');
+  }
   .footer-content {
     flex-direction: column;
     align-items: center;

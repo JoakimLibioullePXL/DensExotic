@@ -29,7 +29,7 @@
 .events-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 80px;
   max-width: 1200px;
   width: 100%;
   padding: 20px;
@@ -38,38 +38,29 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
 }
-
+/* Neon animatie */
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffffff;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff;
+  }
+}
 /* 🔹 Event cards */
 .event-card {
   position: relative;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-}
 
-/* 🔹 Neon Rand Animatie */
-.event-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   border-radius: 10px;
-  border: 4px solid transparent;
-  box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.8);
-  animation: neonBorder 3s linear infinite;
-  pointer-events: none;
-}
-
-/* 🔹 Keyframes: Beweeg de neon-lijn langs de randen */
-@keyframes neonBorder {
-  0% { box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.8); }
-  50% { box-shadow: 0 0 20px 6px rgba(255, 255, 255, 0.5); }
-  100% { box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.8); }
+  border: 1px solid #fff; /* Witte neon rand */
+  animation: neon-glow 1.5s infinite alternate;
 }
 
 /* 🔹 Event afbeelding */
@@ -78,8 +69,9 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-}
 
+
+}
 /* 🔹 Hover effect */
 .event-card:hover {
   transform: scale(1.05);
@@ -130,7 +122,7 @@
   .events-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
-    margin-left: 10%;
+
   }
   .event-card {
     height: 200px;
