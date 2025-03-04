@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 import {EventsListComponent} from './events-list/events-list.component';
-import {RouterOutlet} from '@angular/router';
+import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
+    RouterOutlet,
     NgOptimizedImage,
-    RouterOutlet
+    RouterLink
   ],
   templateUrl: './app.component.html',
   standalone: true,

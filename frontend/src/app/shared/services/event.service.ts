@@ -25,42 +25,6 @@ export class EventService {
     ),
     new Event(
       2,
-      'Joyride By Night',
-      'Ervaar de sfeer van Dens Exotics met een betaalbare Joyride by Night – een sfeervolle avondrit langs prachtige wegen, ideaal om onze events te ontdekken!',
-      'Startlocatie B',
-      150,
-      '07/08/2025',
-      'Oost-Vlaanderen, West-Vlaanderen, Antwerpen',
-      10,
-      'Windowsticker',
-      '/assets/joy-ride-by-night/joy-ride-by-night-1.png',
-      'https://joyride-by-night.eventsquare.store/ugyvksvt0ynu',
-      [
-        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-2.png'),
-        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-3.png'),
-        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-4.png'),
-      ]
-    ),
-    new Event(
-      3,
-      'Tour Des Ardennes',
-      'Een dag vol rijplezier door de bochtige wegen van de Ardennen, perfect voor liefhebbers van uitdagende routes en adembenemende uitzichten!',
-      'Startlocatie C',
-      400,
-      '17/08/2025',
-      'Namen, Luxemburg, Luik',
-      75,
-      'Luch, Drankje + snack, Dens Merch, Windowsticker',
-      '/assets/tour-des-ardennes/tour-des-ardennes-1.png',
-      'https://tour-des-ardennes.eventsquare.store/o61hwc2ecmne',
-      [
-        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-2.png'),
-        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-3.png'),
-        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-4.png'),
-      ]
-    ),
-    new Event(
-      4,
       'Full Day Drive',
       'Een hele dag toeren met als doel minstens een halve tank leeg te rijden, puur rijplezier gegarandeerd!',
       'Startlocatie D',
@@ -78,7 +42,7 @@ export class EventService {
       ]
     ),
     new Event(
-      5,
+      3,
       'Birthday Drive',
       'Een speciale rit ter ere van de verjaardag van de oprichter, met volop sfeer en rijplezier!',
       'Leeuw van Waterlo',
@@ -95,6 +59,44 @@ export class EventService {
         new Activity('test', 'test', '/assets/birthday-drive/birthday-drive-4.png'),
       ]
     ),
+    new Event(
+      4,
+      'Joyride By Night',
+      'Ervaar de sfeer van Dens Exotics met een betaalbare Joyride by Night – een sfeervolle avondrit langs prachtige wegen, ideaal om onze events te ontdekken!',
+      'Startlocatie B',
+      150,
+      '07/08/2025',
+      'Oost-Vlaanderen, West-Vlaanderen, Antwerpen',
+      10,
+      'Windowsticker',
+      '/assets/joy-ride-by-night/joy-ride-by-night-1.png',
+      'https://joyride-by-night.eventsquare.store/ugyvksvt0ynu',
+      [
+        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-2.png'),
+        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-3.png'),
+        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-4.png'),
+      ]
+    ),
+
+    new Event(
+      5,
+      'Tour Des Ardennes',
+      'Een dag vol rijplezier door de bochtige wegen van de Ardennen, perfect voor liefhebbers van uitdagende routes en adembenemende uitzichten!',
+      'Startlocatie C',
+      400,
+      '17/08/2025',
+      'Namen, Luxemburg, Luik',
+      75,
+      'Luch, Drankje + snack, Dens Merch, Windowsticker',
+      '/assets/tour-des-ardennes/tour-des-ardennes-1.png',
+      'https://tour-des-ardennes.eventsquare.store/o61hwc2ecmne',
+      [
+        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-2.png'),
+        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-3.png'),
+        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-4.png'),
+      ]
+    ),
+
     new Event(
       6,
       'Joyride',
