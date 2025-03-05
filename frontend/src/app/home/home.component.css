@@ -20,7 +20,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3%;
-  width: 15%;
+  width: 20%;
   height: 100%;
 }
 
@@ -32,29 +32,13 @@
 
 .column {
   flex: 33.33%;
-}
-
-/* Neon animatie */
-@keyframes neon-glow {
-  0% {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff;
-  }
-  50% {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffffff;
-  }
-  100% {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff;
-  }
+  color: green;
 }
 
 .column img{
   max-width: 60%;
   height: auto;
   text-align: center;
-
-  border-radius: 10px;
-  border: 1px solid #fff; /* Witte neon rand */
-  animation: neon-glow 1.5s infinite alternate;
 }
 
 .column img:hover{
