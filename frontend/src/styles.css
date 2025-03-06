@@ -4,3 +4,8 @@ body{
   padding: 0;
   box-sizing: border-box; /* Inclusief padding en borders in totale breedte/hoogte */
 }
+.cookies{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
