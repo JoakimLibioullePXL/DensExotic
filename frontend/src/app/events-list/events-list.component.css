@@ -19,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../../public/Headerimage.jpg');
+  background-image: url('../../../public/assets/exotic-events/Headerimage.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -160,7 +160,7 @@
 /* Responsieve stijl voor mobiele apparaten */
 @media (max-width: 768px) {
   .background-image{
-    background-image: url('../../../public/HeaderimageMobile.png');
+    background-image: url('../../../public/assets/exotic-events/HeaderimageMobile.png');
   }
   .footer-content {
     flex-direction: column;

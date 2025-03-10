@@ -15,12 +15,12 @@ export class EventService {
       'Oost-Vlaanderen',
       45,
       'Dens Merch, Hapje & Drankje, Windowsticker',
-      '/assets/charity-drive/charity-drive-1.png',
+      '/assets/exotic-events/charity-drive/charity-drive-1.png',
       'https://denscharitydrive.eventsquare.store/dn5b9mm7fvrx',
       [
-        new Activity('test', 'test', '/assets/charity-drive/charity-drive-1.png'),
-        new Activity('test', 'test', '/assets/charity-drive/charity-drive-2.png'),
-        new Activity('test', 'test', '/assets/charity-drive/charity-drive-3.png'),
+        new Activity('test', 'test', '/assets/exotic-events/charity-drive/charity-drive-1.png'),
+        new Activity('test', 'test', '/assets/exotic-events/charity-drive/charity-drive-2.png'),
+        new Activity('test', 'test', '/assets/exotic-events/charity-drive/charity-drive-3.png'),
       ] // Array van activiteiten
     ),
     new Event(
@@ -33,12 +33,12 @@ export class EventService {
       'Vlaams-Brabant, Wallonië',
       90,
       'Middag eten, hapjes in de avond, Drank, Dens Merch, Windowsticker',
-      '/assets/full-day-drive/full-day-drive-1.png',
+      '/assets/exotic-events/full-day-drive/full-day-drive-1.png',
       'https://full-day-drive.eventsquare.store/c6iy5feqoyhi',
       [
-        new Activity('test', 'test', '/assets/full-day-drive/full-day-drive-2.png'),
-        new Activity('test', 'test', '/assets/full-day-drive/full-day-drive-3.png'),
-        new Activity('test', 'test', '/assets/full-day-drive/full-day-drive-4.png'),
+        new Activity('test', 'test', '/assets/exotic-events/full-day-drive/full-day-drive-2.png'),
+        new Activity('test', 'test', '/assets/exotic-events/full-day-drive/full-day-drive-3.png'),
+        new Activity('test', 'test', '/assets/exotic-events/full-day-drive/full-day-drive-4.png'),
       ]
     ),
     new Event(
@@ -51,12 +51,12 @@ export class EventService {
       'Henegouwen, Wallonië, Vlaams-Brabant',
       40,
       'Hapje, Drankje, Dens Merch, Windowsticker',
-      '/assets/birthday-drive/birthday-drive-1.png',
+      '/assets/exotic-events/birthday-drive/birthday-drive-1.png',
       'https://birthday-drive.eventsquare.store/ongfuljnitra',
       [
-        new Activity('test', 'test', '/assets/birthday-drive/birthday-drive-2.png'),
-        new Activity('test', 'test', '/assets/birthday-drive/birthday-drive-3.png'),
-        new Activity('test', 'test', '/assets/birthday-drive/birthday-drive-4.png'),
+        new Activity('test', 'test', '/assets/exotic-events/birthday-drive/birthday-drive-2.png'),
+        new Activity('test', 'test', '/assets/exotic-events/birthday-drive/birthday-drive-3.png'),
+        new Activity('test', 'test', '/assets/exotic-events/birthday-drive/birthday-drive-4.png'),
       ]
     ),
     new Event(
@@ -69,12 +69,12 @@ export class EventService {
       'Oost-Vlaanderen, West-Vlaanderen, Antwerpen',
       10,
       'Windowsticker',
-      '/assets/joy-ride-by-night/joy-ride-by-night-1.png',
+      '/assets/exotic-events/joy-ride-by-night/joy-ride-by-night-1.png',
       'https://joyride-by-night.eventsquare.store/ugyvksvt0ynu',
       [
-        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-2.png'),
-        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-3.png'),
-        new Activity('test', 'test', '/assets/joy-ride-by-night/joy-ride-by-night-4.png'),
+        new Activity('test', 'test', '/assets/exotic-events/joy-ride-by-night/joy-ride-by-night-2.png'),
+        new Activity('test', 'test', '/assets/exotic-events/joy-ride-by-night/joy-ride-by-night-3.png'),
+        new Activity('test', 'test', '/assets/exotic-events/joy-ride-by-night/joy-ride-by-night-4.png'),
       ]
     ),
 
@@ -88,12 +88,12 @@ export class EventService {
       'Namen, Luxemburg, Luik',
       75,
       'Luch, Drankje + snack, Dens Merch, Windowsticker',
-      '/assets/tour-des-ardennes/tour-des-ardennes-1.png',
+      '/assets/exotic-events/tour-des-ardennes/tour-des-ardennes-1.png',
       'https://tour-des-ardennes.eventsquare.store/o61hwc2ecmne',
       [
-        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-2.png'),
-        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-3.png'),
-        new Activity('test', 'test', '/assets/tour-des-ardennes/tour-des-ardennes-4.png'),
+        new Activity('test', 'test', '/assets/exotic-events/tour-des-ardennes/tour-des-ardennes-2.png'),
+        new Activity('test', 'test', '/assets/exotic-events/tour-des-ardennes/tour-des-ardennes-3.png'),
+        new Activity('test', 'test', '/assets/exotic-events/tour-des-ardennes/tour-des-ardennes-4.png'),
       ]
     ),
 
@@ -107,12 +107,12 @@ export class EventService {
       'Oost-Vlaanderen, Antwerpen, Vlaams-Brabant',
       35,
       'Snacks, Dens Merch, Windowsticker',
-      '/assets/joy-ride/joy-ride-1.png',
+      '/assets/exotic-events/joy-ride/joy-ride-1.png',
       'https://joyride.eventsquare.store/jizp22yjcqes',
       [
-        new Activity('test', 'test', '/assets/joy-ride/joy-ride-2.png'),
-        new Activity('test', 'test', '/assets/joy-ride/joy-ride-3.png'),
-        new Activity('test', 'test', '/assets/joy-ride/joy-ride-4.png'),
+        new Activity('test', 'test', '/assets/exotic-events/joy-ride/joy-ride-2.png'),
+        new Activity('test', 'test', '/assets/exotic-events/joy-ride/joy-ride-3.png'),
+        new Activity('test', 'test', '/assets/exotic-events/joy-ride/joy-ride-4.png'),
       ]
     )
   ];
