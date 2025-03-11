@@ -3,10 +3,11 @@
     <nav>
       <div class="logo"><img src="assets/direct-sales/dens-group-direct-sales-black.webp"/></div>
       <ul>
-        <li><a href="#over-ons">Over Ons</a></li>
-        <li><a href="#onze-services">Onze Services</a></li>
-        <li><a href="#solliciteer">Solliciteer</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" (click)="scrollTo('about-us', $event)">OVER ONS</a></li>
+        <li><a href="#" (click)="scrollTo('services', $event)">ONZE SERVICES</a></li>
+        <li><a href="#" (click)="scrollTo('application', $event)">SOLLICITEER</a></li>
+        <li><a href="#" (click)="scrollTo('contact-form', $event)">CONTACT</a></li>
+        <li><a href="#" (click)="scrollTo('footer', $event)">VOLG ONS</a></li>
       </ul>
     </nav>
   </header>
@@ -20,7 +21,7 @@
     <img src="assets/direct-sales/grunge-1.png"/>
   </div>
 
-  <div class="about-us">
+  <div id="about-us" class="about-us" >
     <h1>OVER ONS</h1>
     <hr>
     <p>
@@ -34,7 +35,7 @@
     </p>
   </div>
 
-  <div class="about-rob">
+  <div id="about-rob" class="about-rob">
     <p>
       Van het verkopen van snoepjes tot het bouwen van een <span>high-impact salesorganisatie</span> – Rob heeft zijn ware passie gevonden in directe verkoop. Op <span>19 april 2019</span> zette hij de eerste stap met Dens Group Direct Sales, vastberaden om de standaard in de industrie te doorbreken.
       <br><br>
@@ -48,6 +49,151 @@
       ✅ <span>Een netwerk van 20+ kantoren</span> opbouwen in de komende jaren<br>
     </p>
 
-    <img src="assets/direct-sales/dens-piske.JPG"/>
+    <img src="assets/direct-sales/rob-hoedemakers.jpg"/>
+  </div>
+
+  <div id="brand-abassadors" class="brand-ambassadors">
+    <h1>BRAND AMBASSADEURS</h1>
+    <p>Coming soon!</p>
+  </div>
+
+  <div id="meet-the-team" class="meet-the-team">
+    <h1>MEET THE TEAM</h1>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="assets/direct-sales/rob-hoedemakers.jpg" alt="Persoon 1">
+        <p>ROB HOEDEMAKERS - Eigenaar</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/direct-sales/laure-hubert.jpg" alt="Persoon 2">
+        <p>LAURE HUBERT - Head Of Recruitment Team</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grunge">
+    <img src="assets/direct-sales/grunge-2.png"/>
+  </div>
+
+  <div id="services" class="services">
+    <h1>ONZE SERVICES</h1>
+    <div class="services-1">
+      <img src="assets/direct-sales/services-1.jpg"/>
+      <p>Bij <span>Dens Group Direct Sales</span> draait alles om <span>gezonde competitie, fun en persoonlijke groei</span>. Ons <span>Sales Programma</span> is ontworpen om jou niet alleen een meester in verkoop te maken, maar ook je zelfvertrouwen en communicatieve skills naar een hoger niveau te tillen. Met de juiste coaching, een dynamische omgeving en een team dat elkaar motiveert, leer je hoe je impact maakt en resultaten boekt.</p>
+    </div>
+    <div class="services-2">
+      <p>Persoonlijke groei stopt niet bij sales – met ons <span>BDP-programma</span> krijg je de kans om een team te runnen en je ondernemerschapskills te ontwikkelen. Van <span>recruitment en financiën tot administratie</span>, je leert alles wat nodig is om een succesvolle business op te bouwen. De neveneffecten? Meer verantwoordelijkheid, betere organisatie en een mindset die je laat <span>blijven en blijven doorgaan</span>. 🚀</p>
+      <img src="assets/direct-sales/services-2.jpg"/>
+    </div>
+  </div>
+
+  <div class="grunge">
+    <img src="assets/direct-sales/grunge-3.png"/>
+  </div>
+  <div id="application" class="application">
+    <div class="application-content">
+      <h1>SOLLICITEER</h1>
+      <h2>VERKOPER</h2>
+      <p>
+        Ben jij een sociaal persoon die meer uit hun carrière wil halen? Dan hebben wij de perfecte uitdaging voor jou!
+        <br><br>
+        Sluit je aan bij ons leuke team van verkopers! krijg ook de kans om nieuwe klanten aan te trekken en je verkoopvaardigheden naar een hoger niveau te tillen!
+      </p>
+      <h3>Functieomschrijving:</h3>
+      <ul>
+        <li>Geniet van de vrijheid om zelfstandig te werken en je eigen planning te bepalen.</li>
+        <li>Ontwikkel je verkoopvaardigheden terwijl je nieuwe connecties maakt, persoonlijk contact hebt met klanten en waardevolle feedback verzamelt.</li>
+        <li>Verhoog continu je verkoopresultatendoor middel van je verbeterde vaardigheden.</li>
+      </ul>
+      <h3>Wat bieden wij:</h3>
+      <ul>
+        <li>Flexibiliteit: Werk op je eigen tempo en bepaal je eigen werktijden.</li>
+        <li>Groeimogelijkheden: Ontwikkel jezelf en groei binnen onze organisatie.</li>
+        <li>Opleiding: Kosteloze persoonlijke 1-op-1 training om alle ins en outs van de verkoop te leren.</li>
+        <li>Business Development Programma: Word getraind in alle aspecten van bedrijfsbeheer en leiderschap.</li>
+      </ul>
+      <h3>Voordelen:</h3>
+      <ul>
+        <li>Mogelijkheid tot reizen.</li>
+        <li>Gratis opleiding.</li>
+        <li>Wekelijkse sociale activiteiten.</li>
+        <li>Persoonlijke ontwikkeling.</li>
+        <li>...</li>
+      </ul>
+      <h3>Functie-eisen:</h3>
+      <ul>
+        <li>Geen specifieke ervaring vereist.</li>
+        <li>Geschikt voor iedereen die zich persoonlijk wil ontwikkelen of wil groeien in de verkoopwereld.</li>
+      </ul>
+
+      <a href="https://eu.jotform.com/243314615382352" class="application-button">KLIK HIER</a>
+    </div>
+  </div>
+
+  <div id="contact-form" class="contact-form">
+    <h2>Contacteer Ons</h2>
+    <form (ngSubmit)="submitForm()">
+      <label for="naam">Naam</label>
+      <input type="text" id="naam" [(ngModel)]="contact.naam" name="naam" required>
+
+      <label for="voornaam">Voornaam</label>
+      <input type="text" id="voornaam" [(ngModel)]="contact.voornaam" name="voornaam" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" [(ngModel)]="contact.email" name="email" required>
+
+      <label for="telefoon">Telefoonnummer</label>
+      <input type="tel" id="telefoon" [(ngModel)]="contact.telefoon" name="telefoon">
+
+      <label for="bericht">Bericht</label>
+      <textarea id="bericht" [(ngModel)]="contact.bericht" name="bericht" rows="4" required></textarea>
+
+      <button type="submit">Verzenden</button>
+    </form>
+  </div>
+
+  <div class="grunge">
+    <img src="assets/direct-sales/grunge-1.png"/>
+  </div>
+
+
+  <footer id="footer" class="footer">
+    <h2 class="footer-title">VOLG ONS</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/12BdEednBv6/" target="_blank">
+        <img src="assets/direct-sales/facebook-icon.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/dens_group?igsh=b2k5cW01NTQ1MDI3" target="_blank">
+        <img src="assets/direct-sales/instagram-icon.png" alt="Instagram">
+      </a>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>COOKIES</h3>
+        <p>
+          Wij gebruiken cookies om de gebruikerservaring te verbeteren. Cookies helpen bij het analyseren van
+          websiteverkeer en personaliseren inhoud. Door onze website te gebruiken, accepteer je het gebruik van cookies.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>PRIVACYVERKLARING</h3>
+        <p>
+          Wij respecteren je privacy en zorgen ervoor dat je gegevens veilig worden verwerkt. Jouw persoonlijke informatie
+          wordt nooit gedeeld zonder jouw toestemming en wordt uitsluitend gebruikt volgens ons privacybeleid.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>ALGEMENE VOORWAARDEN</h3>
+        <p>
+          Door deze website te gebruiken, ga je akkoord met onze algemene voorwaarden. Hierin staan de regels en
+          verantwoordelijkheden voor zowel ons als de gebruiker. Lees deze goed door voordat je de website gebruikt.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="grunge">
+    <img src="assets/direct-sales/grunge-2.png"/>
   </div>
 </div>
