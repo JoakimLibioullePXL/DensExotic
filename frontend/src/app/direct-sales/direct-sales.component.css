@@ -455,8 +455,7 @@ button:hover {
   }
 
   .services-1 img,
-  .services-2 img,
-  .about-rob img {
+  .services-2 img{
     display: none; /* Verwijdert de afbeeldingen */
 
   }
