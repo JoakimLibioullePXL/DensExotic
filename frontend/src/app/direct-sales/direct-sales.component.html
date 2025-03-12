@@ -1,13 +1,22 @@
 <div class="direct-sales-background">
   <header>
     <nav>
-      <div class="logo"><img src="assets/direct-sales/dens-group-direct-sales-black.webp"/></div>
-      <ul>
-        <li><a href="#" (click)="scrollTo('about-us', $event)">OVER ONS</a></li>
-        <li><a href="#" (click)="scrollTo('services', $event)">ONZE SERVICES</a></li>
-        <li><a href="#" (click)="scrollTo('application', $event)">SOLLICITEER</a></li>
-        <li><a href="#" (click)="scrollTo('contact-form', $event)">CONTACT</a></li>
-        <li><a href="#" (click)="scrollTo('footer', $event)">VOLG ONS</a></li>
+      <div class="logo">
+        <img src="assets/direct-sales/dens-group-direct-sales-black.webp" />
+      </div>
+
+      <!-- Hamburger menu knop -->
+      <div class="hamburger" (click)="toggleMenu()">
+        ☰
+      </div>
+
+      <!-- Navigatie links -->
+      <ul class="nav-links" [ngClass]="{ 'active': menuOpen }">
+        <li><a href="#" (click)="scrollToSection('about-us', $event)">OVER ONS</a></li>
+        <li><a href="#" (click)="scrollToSection('services', $event)">ONZE SERVICES</a></li>
+        <li><a href="#" (click)="scrollToSection('application', $event)">SOLLICITEER</a></li>
+        <li><a href="#" (click)="scrollToSection('contact-form', $event)">CONTACT</a></li>
+        <li><a href="#" (click)="scrollToSection('footer', $event)">VOLG ONS</a></li>
       </ul>
     </nav>
   </header>

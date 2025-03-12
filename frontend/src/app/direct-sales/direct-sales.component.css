@@ -1,11 +1,14 @@
 html {
   scroll-behavior: smooth;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 .direct-sales-background{
   background-color: #eae6e2;
 }
 body {
-
   font-family: 'BebasNeueRegular', sans-serif;
   background-color: #eae6e2;
   text-align: center;
@@ -24,6 +27,7 @@ nav {
   margin: auto;
   padding: 10px;
   font-size: 1.5rem;
+
 }
 
 .logo {
@@ -60,6 +64,35 @@ nav ul li a:hover {
   color: #555;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 10;
+
+}
+
 .hero {
   margin-left: 15%;
 }
@@ -73,6 +106,7 @@ nav ul li a:hover {
 .grunge{
   margin-top: 10%;
   z-index: 2;
+  padding-bottom: -20px;
 }
 
 .grunge img{
@@ -343,4 +377,115 @@ button:hover {
 .footer-section p {
   font-size: 14px;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    margin-right: 15%;
+    margin-left: -9%;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .services-2{
+    padding-bottom: 30%;
+  }
+  .services-1,
+  .services-2,
+  .about-rob {
+    display: block; /* Verwijdert de grid-layout zodat tekst de volledige breedte inneemt */
+  }
+
+  .services-1 img,
+  .services-2 img,
+  .about-rob img {
+    display: none; /* Verwijdert de afbeeldingen */
+
+  }
+
+
+  .services p,
+  .about-rob p {
+    width: 125%; /* Zorgt ervoor dat de tekst de volledige breedte neemt */
+  }
+  .about-rob p{
+    width: 175%;
+  }
+  .contact-form{
+    margin-top: -25%;
+  }
+  .contact-form button {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    display: block;
+    text-align: center;
+  }
 }
