@@ -153,7 +153,11 @@ nav ul li a:hover {
   margin-left: 15%;
   margin-right: 15%;
 }
+.brand-ambassadors img{
+  width: 50%;
+  margin-left: 25%;
 
+}
 .meet-the-team {
   margin-left: 15%;
   margin-right: 15%;
@@ -444,7 +448,10 @@ button:hover {
   .card {
     width: 100%;
   }
-
+  .brand-ambassadors img{
+    width: 100%;
+    margin-left: 0;
+  }
   .services-2{
     padding-bottom: 30%;
   }
@@ -470,6 +477,9 @@ button:hover {
   }
   .about-rob p{
     width: 175%;
+  }
+  .about-rob img{
+    width: 170%;
   }
   .contact-form{
     margin-top: -25%;
