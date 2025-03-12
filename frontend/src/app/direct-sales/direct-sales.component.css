@@ -265,6 +265,7 @@ hr{
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-decoration: none; /* Zorgt dat de standaard onderstreping verdwijnt */
+  margin-top: 10px;
 }
 
 .application-button:hover {
@@ -282,6 +283,7 @@ hr{
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+
 }
 
 h2 {
@@ -386,7 +388,7 @@ button:hover {
 
   .logo {
     margin-bottom: 10px;
-    
+
   }
 
   .hamburger {
@@ -459,6 +461,9 @@ button:hover {
 
   }
 
+  .application h1{
+    font-size: 2.5rem;
+  }
 
   .services p,
   .about-rob p {
