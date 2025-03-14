@@ -81,6 +81,7 @@
   .about-us-container-2 {
     width: 100%;
   }
+
 }
 
 .about-rob-container{
@@ -99,6 +100,31 @@
 .about-rob-small-text{
   font-size: 0.8rem;
   width: 50%;
+}
+@media (max-width: 768px) {
+  .about-rob-container-1 {
+    grid-template-columns: 100%; /* Volledige breedte voor tekst */
+    text-align: center; /* Tekst centreren */
+  }
+
+  .about-rob-container-1 img {
+    order: 2; /* Zet de afbeelding onder de tekst */
+    max-width: 80%; /* Zorgt ervoor dat de afbeelding niet te groot wordt */
+    margin: auto; /* Ruimte boven en centreren */
+    display: block;
+  }
+
+  .about-rob-container-1 p {
+    order: 1; /* Zet de tekst bovenaan */
+  }
+  .about-rob-small-text{
+    width: 100%;
+    margin-top: 20%;
+  }
+  .team-container{
+    margin: auto;
+    padding-left: 15%;
+  }
 }
 .meet-the-team {
   margin-left: 15%;
