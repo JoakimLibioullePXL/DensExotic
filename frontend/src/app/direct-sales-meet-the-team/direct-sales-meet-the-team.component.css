@@ -1,0 +1,144 @@
+.meet-the-team-page{
+  background-color: #eae6e2;
+}
+.grunge{
+  z-index: 2;
+  padding-bottom: -20px;
+}
+
+.grunge img{
+  width: 100%;
+}
+.about-us{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: -8%;
+}
+
+.about-us hr{
+  border: none;           /* Verwijdert de standaard border */
+  height: 4px;            /* Dikte van de lijn */
+  background-color: #444; /* Donkergrijze kleur */
+  width: 100%;           /* Volledige breedte van het scherm */
+  margin-right: 15%;
+}
+
+.about-us p span{
+  font-weight: bold;
+}
+.about-us-container {
+  display: flex;
+  justify-content: space-between; /* Verdeelt de ruimte gelijkmatig */
+  align-items: flex-start; /* Lijnt de divs aan de bovenkant uit */
+  gap: 20px; /* Ruimte tussen de divs */
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centreert de container */
+}
+
+.about-us-container-1,
+.about-us-container-2 {
+  flex: 1; /* Beide divs nemen gelijke breedte */
+  background: rgba(255, 255, 255, 0.1); /* Subtiele transparante achtergrond */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Zachte schaduw voor diepte */
+  backdrop-filter: blur(5px); /* Wazig effect voor stijl */
+}
+
+.about-us-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.about-us-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-us-container li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.about-us-container li::before {
+  content: "✔"; /* Vinkje als bullet point */
+  position: absolute;
+  left: 0;
+  color: green;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column; /* Zet de divs onder elkaar op kleinere schermen */
+    align-items: center;
+  }
+
+  .about-us-container-1,
+  .about-us-container-2 {
+    width: 100%;
+  }
+}
+
+.about-rob-container{
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.about-rob-container img{
+  width: 100%;
+}
+.about-rob-container-1{
+  display: grid;
+  grid-template-columns: 20% 80%; /* Verdeelt het in 2 kolommen */
+  align-items: center;
+  gap: 5%;
+}
+.about-rob-small-text{
+  font-size: 0.8rem;
+  width: 50%;
+}
+.meet-the-team {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+.meet-the-team h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 200px;
+  max-height: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-member img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.team-member p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
