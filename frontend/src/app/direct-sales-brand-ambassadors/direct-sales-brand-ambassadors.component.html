@@ -1,0 +1,26 @@
+<div class="brand-ambassadors-page">
+  <app-direct-sales-navigation></app-direct-sales-navigation>
+
+  <div class="brand-ambassador-container">
+    <div class="brand-ambassador">
+      <h2>{{ ambassador.name }}</h2>
+      <img [src]="ambassador.image" alt="Foto van {{ ambassador.name }}" class="ambassador-image">
+      <p class="ambassador-text" [innerHTML]="ambassador.description"></p>
+    </div>
+
+    <div class="become-ambassador">
+      <h3>Word jij de volgende Brand Ambassadeur?</h3>
+      <p>
+        Heb jij een passie voor sales, groei en wil je deel uitmaken van een sterk team? <br>
+        Dit is jouw kans om impact te maken en je carrière naar een hoger niveau te tillen. <br><br>
+        Neem contact met ons op en ontdek de mogelijkheden!
+      </p>
+      <a href="https://eu.jotform.com/243314615382352" class="join-button" target="_blank">
+        Meld je aan
+      </a>
+
+    </div>
+  </div>
+
+  <app-direct-sales-footer></app-direct-sales-footer>
+</div>

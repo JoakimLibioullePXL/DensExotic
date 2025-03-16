@@ -1,0 +1,134 @@
+.brand-ambassadors-page {
+  background-color: #eae6e2;
+
+}
+
+/* Zet alleen de content in het midden, zonder de navigatie/footer */
+.brand-ambassador-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Brand Ambassador sectie */
+.brand-ambassador {
+  max-width: 800px;
+  width: 100%;
+  margin: 3% auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #eae6e2;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ambassador-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.ambassador-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  text-align: left;
+  padding: 0 15px;
+}
+
+/* Word Brand Ambassador sectie */
+.become-ambassador {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: #d6d0cb;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.become-ambassador h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.become-ambassador p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  padding: 0 15px;
+}
+
+.join-button {
+  display: inline-block;
+  background-color: #8c7663; /* Warme, neutrale bruintint */
+  color: white;
+  text-decoration: none; /* Verwijdert onderlijning van de link */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.join-button:hover {
+  background-color: #6f5d4f; /* Iets donkerder voor hover-effect */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-ambassador,
+  .become-ambassador {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .ambassador-text, .become-ambassador p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .join-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-ambassador,
+  .become-ambassador {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .ambassador-text, .become-ambassador p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .join-button {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
