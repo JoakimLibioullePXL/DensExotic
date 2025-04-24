@@ -2,21 +2,21 @@ import { Routes } from '@angular/router';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import {HomeComponent} from './home/home.component';
-import {DirectSalesComponent} from './direct-sales/direct-sales.component';
-import {ApplicationComponent} from './direct-sales-application/application.component';
-import {DirectSalesContactComponent} from './direct-sales-contact/direct-sales-contact.component';
-import {DirectSalesMeetTheTeamComponent} from './direct-sales-meet-the-team/direct-sales-meet-the-team.component';
-import {
-  DirectSalesBrandAmbassadorsComponent
-} from './direct-sales-brand-ambassadors/direct-sales-brand-ambassadors.component';
+import {PassedEventDetailComponent} from './passed-event-detail/passed-event-detail.component';
+import {MerchLandingComponent} from './merch-landing/merch-landing.component';
+import {MerchContactComponent} from './merch-contact/merch-contact.component';
+import {MerchCategoryComponent} from './merch-category/merch-category.component';
+import {MerchClothingItemComponent} from './merch-clothing-item-detail/merch-clothing-item.component';
+import {MerchAboutUsComponent} from './merch-about-us/merch-about-us.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'sales', component: DirectSalesComponent},
-  { path: 'sales/application', component: ApplicationComponent},
-  { path: 'sales/contact', component: DirectSalesContactComponent},
-  { path: 'sales/about-us', component: DirectSalesMeetTheTeamComponent},
-  { path: 'sales/brand-ambassadors', component: DirectSalesBrandAmbassadorsComponent},
+  { path: 'merch', component: MerchLandingComponent},
+  { path: 'merch/contact', component: MerchContactComponent},
+  { path: 'merch/about-us', component: MerchAboutUsComponent},
+  { path: 'merch/:category', component: MerchCategoryComponent },
+  { path: 'merch/item/:id', component: MerchClothingItemComponent},
   { path: 'events', component: EventsListComponent },
-  { path: 'event/:id', component: EventDetailComponent }
+  { path: 'event/:id', component: EventDetailComponent },
+  { path: 'passed-event/:id', component: PassedEventDetailComponent },
 ];

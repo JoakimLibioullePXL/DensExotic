@@ -311,3 +311,11 @@
     padding: 8px;
   }
 }
+
+/* Passed events*/
+.passed_events_title{
+  margin-right: 10%;
+  margin-left: 10%;
+  color: white;
+  margin-bottom: -10%;
+}

@@ -1,0 +1,54 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+
+<div class="video-background">
+  <video autoplay loop muted playsinline>
+    <source src="assets/BGEventPages.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<img src="assets/logo_white.png" class="dens-logo">
+
+<div class="event-container">
+  <div class="row">
+    <div class="column event-image image-wrapper">
+      <img [src]="passed_event.activities[0].image" style="width:100%">
+    </div>
+    <div class="column image-wrapper">
+      <img [src]="passed_event.activities[1].image" style="width:100%">
+    </div>
+    <div class="column image-wrapper">
+      <img [src]="passed_event.activities[2].image" style="width:100%">
+    </div>
+  </div>
+
+  <div class="button-row">
+    <div class="button-column">
+      <h1>{{passed_event.title}}</h1>
+    </div>
+    <div class="button-column">
+      <div class="frame">
+        <h2>EVENT VERLOPEN!</h2>
+      </div>
+    </div>
+    <div class="button-column">
+      <h1>{{passed_event.title}}</h1>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-column">
+      <h2>DE RIT</h2>
+      <p>{{passed_event.description}}</p>
+      <p>Afstand: {{passed_event.distance}} Km</p>
+      <p>Regio: {{passed_event.region}}</p>
+      <p>Datum: {{passed_event.date}}</p>
+      <p>Goodies: {{passed_event.goodies}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="frame back-button">
+  <button [routerLink]="['/events']" class="custom-btn btn-7"><span>GA TERUG</span></button>
+</div>

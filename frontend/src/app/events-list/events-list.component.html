@@ -32,6 +32,24 @@
   </div>
 </div>
 
+<div class="passed_events_title">
+  <h1>AFGELOPEN EVENTS</h1>
+  <hr>
+</div>
+<div class="events-wrapper">
+  <div class="events-container">
+    <div class="event-card" *ngFor="let passed_event of passed_events">
+      <a [routerLink]="['/passed-event', passed_event.id]">
+        <img [src]="passed_event.image" alt="{{ passed_event.title }}" class="event-image">
+      </a>
+      <div class="event-info">
+        <span class="event-date">{{ passed_event.date }}</span>
+        <span class="event-title">{{ passed_event.title }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="footer-container">
   <div class="footer-content">
     <div class="logo">

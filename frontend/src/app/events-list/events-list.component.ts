@@ -12,11 +12,12 @@ import { EventService } from '../shared/services/event.service';
 })
 export class EventsListComponent implements OnInit {
   events: any[] = [];
-
+  passed_events: any[] = [];
   constructor(private eventService: EventService, private router: Router) {}
 
   ngOnInit() {
     this.events = this.eventService.getEvents();
+    this.passed_events = this.eventService.getPassedEvents();
   }
 
   goToEventDetail(event: any) {

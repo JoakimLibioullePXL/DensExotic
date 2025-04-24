@@ -1,0 +1,12 @@
+<app-merch-navigation></app-merch-navigation>
+<div class="category-page">
+  <h2 class="category-title">{{ categoryName | titlecase }}</h2>
+  <div class="category-items">
+    <div *ngFor="let item of items" class="category-item-card">
+      <img [src]="item.images[0]" [alt]="item.name">
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.price | currency: 'EUR' }}</p>
+      <a [routerLink]="['/merch/item', item.id]">Bekijk</a>
+    </div>
+  </div>
+</div>

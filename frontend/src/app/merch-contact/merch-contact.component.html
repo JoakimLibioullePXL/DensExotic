@@ -1,0 +1,25 @@
+<div class="contact-page">
+  <app-merch-navigation></app-merch-navigation>
+  <div id="contact-form" class="contact-form">
+    <h2>Contacteer Ons</h2>
+    <form (ngSubmit)="submitForm()">
+      <label for="naam">Naam</label>
+      <input type="text" id="naam" [(ngModel)]="contact.naam" name="naam" required>
+
+      <label for="voornaam">Voornaam</label>
+      <input type="text" id="voornaam" [(ngModel)]="contact.voornaam" name="voornaam" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" [(ngModel)]="contact.email" name="email" required>
+
+      <label for="telefoon">Telefoonnummer</label>
+      <input type="tel" id="telefoon" [(ngModel)]="contact.telefoon" name="telefoon">
+
+      <label for="bericht">Bericht</label>
+      <textarea id="bericht" [(ngModel)]="contact.bericht" name="bericht" rows="4" required></textarea>
+
+      <button type="submit">Verzenden</button>
+    </form>
+  </div>
+</div>
+

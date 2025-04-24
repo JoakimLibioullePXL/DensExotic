@@ -1,0 +1,51 @@
+<div class="clothing-item-page">
+  <app-merch-navigation></app-merch-navigation>
+  <div class="product-container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <div
+        class="image-viewer"
+        (click)="openModal()"
+        (swipeleft)="handleSwipe(-1)"
+        (swiperight)="handleSwipe(1)"
+      >
+        <img [src]="selectedImage" alt="Product afbeelding" />
+      </div>
+      <div class="thumbnails">
+        <img
+          *ngFor="let image of clothingItem?.images; let i = index"
+          [src]="image"
+          [class.selected]="i === selectedImageIndex"
+          (click)="selectImage(i)"
+          alt="Thumbnail"
+        />
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <h1>{{ clothingItem.name }}</h1>
+      <h3>€{{ clothingItem.price.toFixed(2) }}</h3>
+      <p>{{ clothingItem.description }}</p>
+      <p><strong>Materiaal:</strong> {{ clothingItem.material }}</p>
+      <p><strong>Maten:</strong> {{ clothingItem.size.join(', ') }}</p>
+      <p><strong>Kleuren:</strong> {{ clothingItem.color.join(', ') }}</p>
+      <p><strong>Geslacht:</strong> {{ clothingItem.gender }}</p>
+
+      <p *ngIf="clothingItem.personalizationAllowed">
+        <strong>Personalisatie mogelijk</strong>
+      </p>
+      <a class="instagram-button" href="https://www.instagram.com/gebruikersnaam" target="_blank" rel="noopener">
+        <img src="assets/logo_instagram_white.png" alt="Instagram icoon" />
+        Bestellen op Instagram
+      </a>
+    </div>
+  </div>
+
+  <!-- Fullscreen Modal -->
+  <div class="modal" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content">
+      <img [src]="selectedImage" alt="Fullscreen afbeelding" />
+    </div>
+  </div>
+</div>
