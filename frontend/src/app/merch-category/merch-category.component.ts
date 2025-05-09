@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, RouterLink} from '@angular/router';
-import { ClothingService } from '../shared/services/clothing.service';
-import { ClothingItem } from '../shared/models/clothing-item.model';
-import { ClothingCategory } from '../shared/models/enums.model';
+import {ClothingService} from '../shared/services/clothing.service';
+import {ClothingItem} from '../shared/models/clothing-item.model';
+import {ClothingCategory} from '../shared/models/enums.model';
 import {CurrencyPipe, NgForOf, TitleCasePipe} from '@angular/common';
 import {MerchNavigationComponent} from '../merch-navigation/merch-navigation.component';
 
@@ -24,6 +24,9 @@ export class MerchCategoryComponent implements OnInit {
 
   private categoryMap: { [key: string]: ClothingCategory } = {
     'hoodies': ClothingCategory.HOODIE,
+    'sweaters': ClothingCategory.SWEATER,
+    'extra': ClothingCategory.EXTRA,
+    'accessory': ClothingCategory.ACCESSORY,
     't-shirts': ClothingCategory.TSHIRT,
     'polos': ClothingCategory.POLO,
     'jackets': ClothingCategory.JACKET
