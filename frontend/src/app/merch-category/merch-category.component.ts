@@ -24,7 +24,6 @@ export class MerchCategoryComponent implements OnInit {
 
   private categoryMap: { [key: string]: ClothingCategory } = {
     'hoodies': ClothingCategory.HOODIE,
-    'sweaters': ClothingCategory.SWEATER,
     'extra': ClothingCategory.EXTRA,
     'accessory': ClothingCategory.ACCESSORY,
     't-shirts': ClothingCategory.TSHIRT,

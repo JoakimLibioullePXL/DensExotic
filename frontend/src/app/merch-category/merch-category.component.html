@@ -4,9 +4,11 @@
   <div class="category-items">
     <div *ngFor="let item of items" class="category-item-card">
       <img [src]="item.images[0]" [alt]="item.name">
-      <h3>{{ item.name }}</h3>
-      <p>{{ item.price | currency: 'EUR' }}</p>
-      <a [routerLink]="['/merch/item', item.id]">Bekijk</a>
+      <div class="category-item-info">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.price | currency: 'EUR' }}</p>
+        <a [routerLink]="['/merch/item', item.id]">Bekijk</a>
+      </div>
     </div>
   </div>
 </div>

@@ -35,10 +35,15 @@
 .category-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .category-item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 100%;
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
@@ -48,7 +53,6 @@
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
 }
-
 .category-item-card:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -81,8 +85,8 @@
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
-}
 
+}
 .category-item-card p {
   font-weight: bold;
   margin-bottom: 0.75rem;
